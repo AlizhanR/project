@@ -1,0 +1,373 @@
+header{
+    display: block;
+    margin-top: -10px;
+    
+}
+
+
+
+.head{
+    background-color: #1A1A1A;
+    height: 108px;
+    width: 1519px;
+    background-size: cover;
+    margin-top: -23px;
+    margin-left: -8px;
+    
+}
+
+
+
+
+
+.logo {
+    width: 116px;
+    height: 40px;
+    padding-top: 20px;
+    float: left;
+    padding-left: 100px;
+    color: #4d4d4d;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 240px;
+    margin-top: -2px;
+    margin-left: 0px;
+    position: relative;
+    color: white;
+}
+
+
+.menu {
+    font-size: 12px;
+    padding-right: 100px;
+    padding-top: 25px;
+
+
+}
+.link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 30px 0px 10px;
+    position: relative;
+    font-size: 17px;
+    color:   white; ;
+    text-decoration: none;
+    padding-top: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold ;
+}
+
+
+
+.link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+
+    background-color: white;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: .2s linear;
+}
+.link:hover:after {
+    opacity: 1;
+}
+
+.main_slide,
+.main_slide:after {
+    position: relative;
+   
+    height: 408px;
+    margin-top: 0px;
+    
+    margin-left: -8px;
+}
+
+
+
+.main_slide li {
+    width: 1519px;
+    height:  508px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    -webkit-animation: anim_slides 24s linear infinite 0s;
+    -moz-animation: anim_slides 24s linear infinite 0s;
+    -o-animation: anim_slides 24s linear infinite 0s;
+    -ms-animation: anim_slides 24s linear infinite 0s;
+    animation: anim_slides 24s linear infinite 0s;
+    
+    
+}
+
+.main_slide li:nth-child(1) {
+
+    background-image: url(imag/fatbike.jpg);
+    animation-delay: 0s;
+    
+}
+
+.main_slide li:nth-child(2) {
+    background-image: url(imag/bmx.jpg);
+    -webkit-animation-delay: 8.0s;
+    -moz-animation-delay: 8.0s;
+    
+}
+.main_slide li:nth-child(3) {
+
+    
+    background-image: url(imag/nightbike.jpg);
+    
+    -webkit-animation-delay: 16.0s;
+    -moz-animation-delay: 16.0s;
+}
+
+
+@-webkit-keyframes  anim_slides {
+    0% {
+        opacity: 0;
+    }
+    6% {
+        opacity: 1;
+    }
+    24% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes  anim_slides {
+    0% {
+        opacity: 0;
+    }
+    6% {
+        opacity: 1;
+    }
+    24% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes  anim_slides {
+    0% {
+        opacity: 0;
+    }
+    6% {
+        opacity: 1;
+    }
+    24% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.main_slide p{
+    margin-top: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+.button {
+    background-color: #1A1A1A;
+    color: white;
+    text-align: center;
+    position: relative;
+    border: 0px;
+    border-color:#1A1A1A ;
+    width: 130px;
+    margin-top: 100px;
+    height: 42px;
+    font-size: 16px;    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+button:hover{
+    background-color: #4d4d4d;
+
+}
+
+
+
+
+
+
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: white;
+    margin-top: 110px;
+    width: 154px;
+}
+
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    
+
+}
+
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #929292;
+    content: "/\00a0";
+    
+
+}
+
+
+ul.breadcrumb li a {
+    color: #929292;
+    text-decoration: none;
+
+}
+
+
+ul.breadcrumb li a:hover {
+    color:black;
+    text-decoration: underline;
+
+}
+
+.centertx{
+    width: 1519px;
+    height:  100px;
+    margin-left: -10px;
+    
+}
+.centertx p{
+    width: 900px;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    text-align: center;
+    
+
+}
+.sidenav {
+    height: 100%;
+    width:150px;
+    position: relative;
+    z-index: 1;
+    top: 0px;
+    left: 0;
+    background-color:white;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+    color:black;
+    background-color: white;
+}
+
+
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: white;
+    color: black;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: white;
+    padding-left: 8px;
+    
+}
+.dropdown-container a{
+    color: #4d4d4d;
+
+}
+
+
+/* Optional: Style the caret down icon */
+.caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+.verse{
+    display: table;
+    margin: 0 auto; 
+    white-space: pre-line; 
+    word-wrap: break-word;
+    position: relative;
+    margin-left: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #4d4d4d;
+    font-size: 20px;
+    font-weight: bold;
+}
+.line{
+    width: 150px;
+    height:  3px;
+    background-color: rgb(224, 223, 223);
+    margin-left: 00px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bikes</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/bikes.css">
+</head>
+<body>
+    <header>
+        
+        <div class="head">
+            <div class="logo">
+                <h1>ABS</h1>
+            </div>
+            <div class="menu">
+                <a class="link" href="ABS.html">HOME</a>
+                <a class="link" href="bikes.html">BIKES</a>
+                <a class="link" href="electric_bikes.html">ELECTRIC BIKES</a>
+                <a class="link" href="equipment.html">EQUIPMENT</a>
+                <a class="link" href="bike_shops.html">BIKE SHOPS</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="slide">
+            <ul class="main_slide">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <p>Bikes</p>
+            <button onclick="but1()" class="button">LEARN MORE</button>
+            </ul>
+            
+        </div>
+
+        <ul class="breadcrumb">
+            <li><a href="ABS.html">Home</a></li>
+            <li><a href="bikes.html">Bikes</a></li>
+          </ul>
+
+          <div class="centertx" >
+              <p>The world’s best bikes come only from the world’s best bicycle company.
+                   Every bike is built to<br>enhance the quality of your ride, and every model is backed by our history of performance,<br>durability, and precision engineering.
+                    Find your next great ride here from our comprehensive<br>offering of trail-shredding mountain bikes, lightning-quick road bikes, and stylish city bikes. </p>
+          </div>
+
+          <div class="verse">
+              Filters
+          </div>
+            
+          <div class="line"></div>
+
+
+
+          
+
+          <div class="sidenav">
+            <button class="dropdown-btn">Category 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Men's bikes</a>
+                <a href="#">Woman's bikes</a>
+                <a href="#">Mountain bikes</a>
+                <a href="#">Hybrid bikes</a>
+                <a href="#">Road bikes</a>
+                <a href="#">Electra bikes</a>
+                <a href="#">Electric bikes</a>
+                <a href="#">Kid's bikes</a>
+                <a href="#">City bikes</a>
+              </div>
+
+            <div class="line"></div>
+
+            <button class="dropdown-btn">New 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">NEW</a>
+              </div>
+
+            <div class="line"></div>
+
+            <button class="dropdown-btn">Gender 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Men</a>
+                <a href="#">Unisex</a>
+                <a href="#">Woman</a>
+                <a href="#">Boys</a>
+                <a href="#">Girls</a>
+              </div>
+
+              <div class="line"></div> 
+
+              <button class="dropdown-btn">Brand 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                <a href="#">Specialized </a>
+                <a href="#">Giant</a>
+                <a href="#">Scott</a>
+                <a href="#">Cube</a>
+                <a href="#">Cannondale</a>
+                <a href="#">GT</a>
+                <a href="#">Author</a>
+              </div>
+
+            <div class="line"></div>
+
+            <button class="dropdown-btn">Price 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+
+            <div class="line"></div>
+            <button class="dropdown-btn">Sale 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          
+          
+          
+          <script>
+         
+          var dropdown = document.getElementsByClassName("dropdown-btn");
+          var i;
+          
+          for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var dropdownContent = this.nextElementSibling;
+              if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+              } else {
+                dropdownContent.style.display = "block";
+              }
+            });
+          }
+          </script>
+
+    </main>
+</body>
+</html>
